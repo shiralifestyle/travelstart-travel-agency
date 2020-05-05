@@ -1,0 +1,49 @@
+.masthead {
+  background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 32px 0;
+
+   // Desktop: 480px
+   @media (min-width: #{$screen-mobile-large}) {
+
+   }
+
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    padding: 95px 0;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-title {
+    color: white;
+    font-size: 48px;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+
+    // Desktop: 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      font-size: 72px;
+    }
+  } 
+
+  &-sub-title {
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    text-align: center;
+    
+    @media (min-width: #{$screen-desktop-large}) {
+      font-size: 24px;
+    }
+  }
+}

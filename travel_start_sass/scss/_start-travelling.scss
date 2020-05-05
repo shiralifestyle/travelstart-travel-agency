@@ -1,0 +1,49 @@
+.start-travelling {
+  background-image: url('../images/start-travelling.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    background-image: url('../images/start-travelling.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &-wrapper {
+    background-color: white;
+    padding: 24px 16px;
+    box-shadow: 0 2px 4px 0 rgba(5,35,49,0.14), 0 4px 5px 0 rgba(5,35,49,0.12);
+    border-radius: 2px;
+    text-align: center;
+    transform: translateY(-64px);
+    width: 288px;
+
+    // 480px
+    @media (min-width: #{$screen-mobile-large}) {
+      width: 388px;
+    }
+
+    // 768px
+    @media (min-width: #{$screen-tablet}) {
+      width: 700px;
+    }
+
+    // Desktop: 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      background-color: white;
+      padding: 24px;
+      box-shadow: 0 2px 4px 0 rgba(5,35,49,0.14), 0 4px 5px 0 rgba(5,35,49,0.12);
+      border-radius: 2px;
+      text-align: center;
+      transform: translateY(-40px);
+      width: 895px;
+    }
+  }
+  
+  h2 {
+    font-weight: normal;
+  }
+}

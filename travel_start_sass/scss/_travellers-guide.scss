@@ -1,0 +1,152 @@
+
+.travellers-guide {
+  background-color: white;
+  padding: 40px 8px 32px 8px;
+
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    padding: 65px 0;
+  }
+
+  &-intro {
+    text-align: center;
+    padding-bottom: 32px;
+
+    // Desktop: 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      margin: 0 auto;
+      width: 827px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+    
+    // 480px
+    @media (min-width: #{$screen-mobile-large}) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    // 768px
+    @media (min-width: #{$screen-tablet}) {
+     display: flex;
+     flex-direction: column;
+    }
+
+    // 800px
+    @media (min-width: 800px) {
+      display: flex;
+      flex-direction: column;
+     }
+
+    // 900px
+    @media (min-width: 900px) {
+      display: flex;
+      flex-direction: row;
+      padding: 0 40px;
+    }
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 40px;
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    & + & {
+      margin-top: 0;
+
+    // 480px
+    @media (min-width: #{$screen-mobile-large}) {
+      margin-top: 0;
+    } 
+
+    // 768px
+    @media (min-width: #{$screen-tablet}) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    // 800px
+    @media (min-width: 800px) {
+      display: flex;
+      flex-direction: column;
+     }
+     
+     // 900px
+     @media (min-width: 900px) {
+      display: flex;
+      flex-direction: row;
+      padding: 0 40px;
+    }
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0px;
+    }
+  }
+}
+  
+  &-card {
+    width: 304px;
+    margin: 0 auto;
+    padding: 0px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+    margin-bottom: 16px;
+    line-height: 21px;
+
+    // 900px
+    @media (min-width: 900px) {
+      width: calc(33.33% -  24px / 2);
+      padding-top: 0;
+      line-height: 21px;
+    }
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      flex: 0 0 auto;
+      width: calc(33.33% -  24px / 2);
+      display: flex;
+      flex-direction: column;
+      padding: 0px 24px 24px 24px;
+      box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+      line-height: 21px;
+    }
+  }
+
+  &-card:hover {
+     
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      box-shadow: 0 6px 10px 0 rgba(5,35,49,0.14), 0 1px 18px 0 rgba(5,35,49,0.12);
+    }
+  }
+ 
+  &-content {
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: $cutty-sark;
+
+    // 1280px
+    @media (min-width: #{$screen-desktop-large}) {
+      justify-content: space-between;
+      height: 60px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &-blue-button {
+    font-size: 14px;
+  }
+}

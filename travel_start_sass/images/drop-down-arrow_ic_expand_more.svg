@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>5152056C-21EE-4CA1-8994-7D0455B98170</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="13.825 7.15833333 10 10.975 6.175 7.15833333 5 8.33333333 10 13.3333333 15 8.33333333"></polygon>
+    </defs>
+    <g id="Group-Travel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Travelstart-Live_FINAL_mobile" transform="translate(-239.000000, -3823.000000)">
+            <g id="Group" transform="translate(16.000000, 3090.000000)">
+                <g id="Button/Small---Right-Icon" transform="translate(42.000000, 718.000000)">
+                    <g id="Right-Icon" transform="translate(176.000000, 8.000000)">
+                        <g id="ic_expand_more">
+                            <polygon id="Bounds" points="0 0 20 0 20 20 0 20"></polygon>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Icon"></g>
+                            <g id="↳-🎨Color" mask="url(#mask-2)">
+                                <rect id="Background" x="0" y="0" width="24" height="24"></rect>
+                                <rect id="Fill" fill="#1BB3F5" x="0" y="0" width="20" height="20"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

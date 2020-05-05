@@ -1,0 +1,113 @@
+$sidebar-width: 280px;
+$content-margin: 24px;
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 16px 24px 16px;
+  
+  // 768px 
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 55px 0;
+  }
+
+  // 1280px
+  @media (min-width: $screen-desktop-large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+  }
+
+  &-content {    
+    // 768px 
+    @media (min-width: $screen-tablet) {
+      width: calc(100% - #{$sidebar-width} - #{$content-margin});
+      margin-right: 16px;
+    }
+
+    // 1280px
+    @media (min-width: $screen-desktop-large) {
+      width: calc(100% - #{$sidebar-width} - #{$content-margin});
+      margin-right: 0;
+    }
+
+    h2 {
+      margin-top: 40px;
+
+      // 768px
+      @media (min-width: $screen-tablet) {
+        margin-top: 0;
+      }
+
+      // 1280px
+      @media (min-width: $screen-desktop-large) {
+      margin-top: 0;
+      }
+    }
+  }
+
+  &-overflow-1 {
+
+    // 768px 
+    @media (min-width: $screen-tablet) {
+      width: 100%;
+    }
+
+    // 1280px
+    @media (min-width: $screen-desktop-large) {
+      width: 100%;
+    }
+  }
+}
+
+/*  ********************************************** */
+
+.overview-sidebar {
+  width: 100%;
+  padding: 24px;
+  box-shadow: 0 0 4px 0 rgba(5,35,49,0.14), 0 3px 4px 0 rgba(5,35,49,0.12);
+
+  // 768px 
+  @media (min-width: $screen-tablet) {
+    width: 248px; 
+    margin-left: 16px; 
+  }
+
+  // 1280px
+  @media (min-width: $screen-desktop-large) {
+    width: $sidebar-width;
+    margin-left: 0;  
+  }
+
+  h3 {
+    margin: 0 0 25px 0;
+    font-size: 24px;
+    color: $blue-dianne;
+    font-weight: 400;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  a + a {
+   margin-top: 25px;
+  }
+}
+
+
+
